@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Michael Rodríguez" />
+    <meta name="Description" content="multiplanetary weight calculator, practica de JS para el curso de programación básica">
+    <title>Peso en otro planeta</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div id="Cuerpo">
+        <div id="floatingFooter">
+            <h3>Michael Rodríguez (<a href="https://twitter.com/Michaelrdz_me" target="_blank">@Michaelrdz.me</a>)<br>
+            - 2022 -
+            </h3>
+            <hr/>
+        </div>
+        <section id="cont_general">
+            <div id="cont_espacio">
+                <div class="asides"><h1>Tu Peso en Otros Planetas</h1><hr/></div>
+                <div class="asides">
+                    <label>Tu peso en la tierra:</label>
+                    <br>
+                    <input id="txt_pesoIngresado" min="0" type="number" onchange="Calcular()"> Kg
+                </div>
+                <div class="asides">
+                    <label>Tu peso en </label> <select name="planetas" id="planetas" onchange="Calcular()">
+                        <option value="mercurio">Mercurio</option>
+                        <option value="venus">Venus</option>
+                        <option value="marte">Marte</option>
+                        <option value="jupiter">Jupiter</option>
+                        <option value="saturno">Saturno</option>
+                        <option value="urano">Urano</option>
+                        <option value="neptuno">Neptuno</option>
+                    </select>:
+                    <br>
+                    <input id="txt_pesoResultado" type="text"> Kg
+                </div>
+                <div class="asides">
+                    <button id="btn_calcular" onclick="Calcular()">CALCULAR</button>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
